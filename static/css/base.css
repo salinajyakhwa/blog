@@ -1,0 +1,119 @@
+/* Post entry cards */
+.post-entry {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.post-entry h2 a {
+    color: #2e7d32;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.post-entry h2 a:hover {
+    color: #1b5e20;
+    text-decoration: underline;
+}
+
+/* Generic forms */
+form {
+    background: #fff;
+    padding: 2rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+form p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Input fields */
+input[type="text"],
+textarea,
+input[type="password"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 0.6rem;
+    margin: 0.3rem 0 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #2e7d32;
+    outline: none;
+}
+
+/* Buttons */
+button,
+input[type="submit"] {
+    background-color: #2e7d32;
+    border: none;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #1b5e20;
+}
+
+/* Special delete button */
+input[value="Confirm Delete"] {
+    background-color: #c62828;
+}
+
+input[value="Confirm Delete"]:hover {
+    background-color: #8e0000;
+}
+
+/* Links for edit/delete under posts */
+a {
+    color: #2e7d32;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1b5e20;
+    text-decoration: underline;
+}
+
+/* Edit/Delete links styled like small action buttons */
+a[href*="post_edit"],
+a[href*="post_delete"] {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 0.95rem;
+    color: #555;
+    background: #f0f0f0;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+a[href*="post_edit"]:hover {
+    background-color: #1976d2;
+    color: #fff;
+}
+
+a[href*="post_delete"]:hover {
+    background-color: #c62828;
+    color: #fff;
+}
